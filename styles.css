@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --maingray: rgb(57, 65, 102);
+    --darkgray: #20213c;
+    --maingreen: rgb(0, 167, 173);
+    --yellowline: rgb(225, 196, 148);
+    --maroonline: rgb(181, 104, 136);
+    --darkred: rgb(209, 47, 73);
+    --palered: rgb(232, 74, 99);
+}
+
+body {
+    background-color: var(--darkgray);
+}
+
+
+/* Header */
+
+header {
+    background-color: var(--maingray);
+    display: flex;
+    position: fixed;
+    width: 96%;
+    font-size: 16px;
+    margin: 0 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+.header-list {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.header-1 {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.header-1 li {
+    display: flex;
+    list-style: none;
+    margin-right: 40px;
+}
+
+li img {
+    height: 16px;
+    margin-right: 5px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+#profile {
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+#dropdown {
+    width: 10px;
+    justify-self: center;
+    margin-left: 3px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Section */
+
+.section-1 {
+    padding-top: 75px;
+}
+
+.menu-box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--maingray);
+    max-width: 25rem;
+    margin: 0 20px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.menu-box a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-box h1 {
+    text-align: center;
+    background-color: var(--maingreen);
+    font-size: 25px;
+    border-radius: 5px 5px 0 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu-box ul li {
+    list-style: none;
+    border-radius: 0 0 9px 9px;
+    margin-left: 20px;
+}
+
+.menu-box span {
+    display: flex;
+    justify-content: space-between;
+    border-bottom-style: solid;
+    border-color: var(--darkgray);
+}
+
+.menu-box p {
+    color: white;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.last {
+    border-style: none;
+}
+
+
+/* Section 2 */
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--maingray);
+    max-width: 25rem;
+    border-radius: 5px;
+    margin: 25px 20px;
+}
+
+.section-2 h1 {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--darkgray);
+    border: 30px solid var(--maingreen);
+}
+
+#month {
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 50px;
+    font-size: 50px;
+}
+
+#year {
+    color: var(--maingray);
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+
+
+/* Section 3 */
