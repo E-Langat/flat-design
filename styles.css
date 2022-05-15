@@ -20,7 +20,9 @@ body {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 3rem;
+    /* grid-gap: 3rem; */
+    /* grid-column-gap: 3rem; */
+    padding: 5rem 0;
 }
 
 
@@ -84,10 +86,6 @@ header a {
 
 
 /* Section */
-
-.section-1 {
-    padding-top: 75px;
-}
 
 .menu-box {
     display: flex;
