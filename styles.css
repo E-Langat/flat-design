@@ -19,7 +19,7 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, f1r));
+    /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
     grid-gap: 3rem;
 }
 
@@ -30,9 +30,8 @@ header {
     background-color: var(--maingray);
     display: flex;
     position: fixed;
-    width: 96%;
+    width: 100%;
     font-size: 16px;
-    margin: 0 20px;
     border-radius: 0 0 5px 5px;
 }
 
@@ -192,9 +191,9 @@ header a {
 /* Section 3 */
 
 #profile-pic {
-    width: 50vw;
-    max-width: 250px;
-    min-width: 188px;
+    width: 65vw;
+    max-width: 300px;
+    min-width: 200px;
     border-radius: 50%;
 }
 
@@ -207,14 +206,43 @@ header a {
     align-items: center;
 }
 
+.user-profile p {
+    color: #ffffff;
+    line-height: 10px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px;
+    text-align: center;
+}
+
+.user-profile li p {
+    font-size: 12px;
+}
+
+.user-profile p a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 50px;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+}
+
 .add {
     display: flex;
     align-self: flex-end;
-    margin: 20px;
+    margin: 20px 20px 0 0;
+    background-color: var(--darkgray);
+    border-radius: 100%;
 }
 
 .add img {
     width: 30px;
+}
+
+.details {
+    width: 100%;
 }
 
 .details ul {
@@ -223,9 +251,14 @@ header a {
 
 .details li {
     list-style: none;
-    margin: 10px 20px;
+    margin: 10px 30px;
     display: flex;
-    color: white;
-    font-size: 11px;
+    font-size: 19px;
     align-items: center;
+}
+
+.details ul {
+    border-style: solid none none none;
+    width: 100%;
+    justify-content: center;
 }
