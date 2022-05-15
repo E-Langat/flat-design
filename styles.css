@@ -253,6 +253,7 @@ header a {
     display: flex;
     font-size: 19px;
     align-items: center;
+    /* justify-items: space-evenly; */
 }
 
 .details ul {
