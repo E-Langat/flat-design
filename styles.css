@@ -437,15 +437,12 @@ header a {
     margin: 20px;
 }
 
-.signin span {
-    display: flex;
-    justify-content: center;
-}
-
 .signin input {
     background-color: var(--fadedgray);
     border-style: none;
     color: white;
+    display: flex;
+    flex: 1;
 }
 
 .signin input:focus-visible {
@@ -456,5 +453,25 @@ header a {
     font-style: italic;
     color: rgb(255, 255, 255);
     font-size: 13px;
-    font-weight: 100;
+}
+
+.input-details {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login,
+.password {
+    display: flex;
+    background-color: var(--fadedgray);
+    margin: 20px 20px 0 20px;
+    border: 20px solid var(--fadedgray);
+    border-radius: 10px;
+}
+
+.login img,
+.password img {
+    margin-right: 10px;
+    height: 25px;
 }
