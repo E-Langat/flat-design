@@ -26,6 +26,16 @@ main {
     margin: 0 20px
 }
 
+main :nth-child(2) {
+    grid-row: 1/3;
+}
+
+main :nth-child(6) {
+    grid-column: 1/3;
+    display: flex;
+    justify-self: stretch;
+}
+
 
 /* Header */
 
