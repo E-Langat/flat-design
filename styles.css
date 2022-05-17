@@ -6,6 +6,7 @@
 :root {
     --maingray: rgb(57, 65, 102);
     --darkgray: #20213c;
+    --fadedgray: rgb(80, 88, 126);
     --maingreen: rgb(0, 167, 173);
     --yellowline: rgb(225, 196, 148);
     --maroonline: rgb(181, 104, 136);
@@ -20,9 +21,9 @@ body {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-gap: 3rem; */
-    /* grid-column-gap: 3rem; */
+    grid-gap: 3rem;
     padding: 5rem 0;
+    margin: 0 20px
 }
 
 
@@ -87,11 +88,16 @@ header a {
 
 /* Section */
 
+.section-1 {
+    display: block;
+    width: 100%;
+    height: fit-content;
+}
+
 .menu-box {
     display: flex;
     flex-direction: column;
     background-color: var(--maingray);
-    margin: 0 20px;
     line-height: 50px;
     font-size: 20px;
     border-radius: 5px;
@@ -142,7 +148,6 @@ header a {
     flex-direction: column;
     background-color: var(--maingray);
     border-radius: 5px;
-    margin: 0 20px;
     padding: 15px;
 }
 
@@ -199,7 +204,6 @@ header a {
     display: flex;
     flex-direction: column;
     background-color: var(--maingray);
-    margin: 0 20px;
     border-radius: 5px;
     align-items: center;
 }
@@ -243,7 +247,7 @@ header a {
 
 .details li {
     list-style: none;
-    padding: 10px 30px;
+    padding: 10px 40px;
     display: flex;
     font-size: 19px;
     align-items: center;
@@ -251,7 +255,7 @@ header a {
 
 .details ul {
     display: flex;
-    border-style: solid none none none;
+    margin-top: 20px;
     width: 100%;
     justify-content: space-evenly;
 }
@@ -261,6 +265,196 @@ header a {
     border-left: 1px solid var(--darkgray);
 }
 
+#seen {
+    border-top: 2px solid var(--maingreen);
+}
+
+#comments {
+    border-top: 2px solid var(--yellowline);
+}
+
+#like {
+    border-top: 2px solid var(--maroonline);
+}
+
 .details img {
     margin-left: 10px;
+}
+
+
+/* Weather section */
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    align-items: center;
+}
+
+.location {
+    background-color: var(--darkred);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+    border-radius: 5px 5px 0 0;
+    color: white;
+    height: 3rem;
+    align-items: center;
+    font-size: 30px;
+    padding: 30px 0 10px;
+}
+
+.location img {
+    margin: 0 7px;
+    width: 20px;
+}
+
+.temp {
+    background-color: var(--palered);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+}
+
+.temp p {
+    display: flex;
+    padding: 20px;
+}
+
+.day {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 2rem 0 0 3rem;
+}
+
+.degree {
+    font-size: 5rem;
+    margin-left: 4rem;
+    align-items: center;
+}
+
+.degree span {
+    margin: 1rem;
+}
+
+.degree img {
+    width: 10rem;
+}
+
+
+/* Subscribe to the newsletter */
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--maingray);
+    color: white;
+    border-radius: 5px;
+}
+
+.mail {
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mail p {
+    text-align: center;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.mail input {
+    margin: 0 2rem 0 0;
+    height: 20px;
+    background-color: var(--fadedgray);
+    border: 20px solid var(--fadedgray);
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    flex: 1;
+}
+
+.mail-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fadedgray);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#mail-newsletter {
+    margin-left: 20px;
+}
+
+.mail-section input:focus-visible {
+    outline: none;
+}
+
+.mail-section ::placeholder {
+    color: white;
+    font-size: small;
+    font-style: italic;
+}
+
+.subscribe {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 8rem;
+    background-color: var(--maingreen);
+    height: 45px;
+    border-radius: 5px;
+}
+
+.subscribe button {
+    background-color: var(--maingreen);
+    border-style: none;
+    cursor: pointer;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+
+/* SignIn */
+
+.signin {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--maingray);
+    border-radius: 5px;
+    color: white;
+}
+
+.signin p {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.signin span {
+    display: flex;
+    justify-content: center;
+}
+
+.signin input {
+    background-color: var(--fadedgray);
+    border-style: none;
+    color: white;
+}
+
+.signin input:focus-visible {
+    outline: none;
+}
+
+.signin ::placeholder {
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 100;
 }
